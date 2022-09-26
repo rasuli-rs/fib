@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'bash' }
+  agent { label 'ubuntu:latest' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
