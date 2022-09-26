@@ -1,8 +1,6 @@
 pipeline {
-  agent { label 'ubuntu:latest' }
-  options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  }
+  agent { label 'linux' }
+  
   environment {
     DOCKERHUB_CREDENTIALS = credentials('DOCKER_HUB_CRED')
   }
