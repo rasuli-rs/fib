@@ -1,2 +1,4 @@
 #!/bin/bash
-docker logout
+#docker logout
+
+##removed the logout function from jenkinsfile
